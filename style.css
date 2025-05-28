@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header, .map{
+    background: linear-gradient(135deg, #ff7043, #ffb74d);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 8px solid #d84315;
+    box-shadow: 0 4px 10px rbga(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 3px 3px 0px #d84315 4px 4px 0px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner {
+    min-height: 450px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffffff33;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner-content:hover {
+    transform: scale(1.05);
+}
+
+.banner-content h2{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #333, 3px 3px 0px rgba(0, 0, 0, 0.3);
+    color: #ffd180;
+}
+
+.banner-content p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+#banner1 {background-image: url(hero-banner.jpg);}
+#banner2 {background-image: url(comidas.jpg);}
+#banner3 {background-image: url(dance.jpg);}
+#banner4 {background-image: url(brincadeiras.jpg);}
+#banner5 {background-image: url(musica.jpg);}
+#banner6 {background-image: url(decoracao.jpg);}
+
+.banner:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: #4e342e;
+    color: #fff8e1;
+    padding: 32px 16px;
+    border-top: 5px solid #3e2723;
+    text-align: center;
+}
+
